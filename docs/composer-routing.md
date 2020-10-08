@@ -6,9 +6,9 @@ title: Composer Routing Libraries
 ## Example
 Using [https://github.com/bramus/router](https://github.com/bramus/router)
 
-* Add `"bramus/router": "~1.4"` to `composer.json` in the `customers\croissant` folder.
+* Add `"bramus/router": "~1.4"` to `composer.json` in the `/croissant` folder.
 
-```javascript
+```json
 {
 	"name": "Croissant/Croissant",
 	"description": "The Croissant Framework.",

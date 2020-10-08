@@ -14,4 +14,4 @@ Croissant uses a static Singleton approach to it's internal classes, so no speci
 
 All classes and methods within the framework can be called immediately with no instantiation needed - this is taken care of the first time a class method is called.
 
-For example, to set a variable into the `Session`, all that is needed is to call `Session::SetVariable($key, $data)` directly, there is no need to `use` the class by name in the route or method.
+For example, to set a variable into the [Session](inbuilt/sessions), all that is needed is to call `Session::SetVariable($key, $data)` directly, there is no need to `use` the class by name in the route or method.

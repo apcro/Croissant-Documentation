@@ -21,7 +21,7 @@ const features = [
     imageUrl: 'img/undraw_dev_focus_b9xo.svg',
     description: (
       <>
-        Using a Singelton pattern, the Croissant Framework removes most of the boilerplate necessary when writing object oriented PHP code. The default reliance on the well-known Smarty templating engine makes writing and deploying rich websites easy.
+        Using a Singleton pattern, the Croissant Framework removes most of the boilerplate necessary when writing object oriented PHP code. The use of the well-known Smarty templating engine makes writing and deploying rich websites easy.
       </>
     ),
   },

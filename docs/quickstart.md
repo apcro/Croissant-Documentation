@@ -36,14 +36,16 @@ Typically, the Croissant Website code is configured using a publicly-accessible 
 </virtualhost>
 ```
 ### Example hosts file configuration
-127.0.0.1 myserver.ds
+```
+	127.0.0.1 myserver.ds
+```
 
 ## System requirements
 Make sure your server meets the following requirements.
 
-Apache 2.2+ or nginx
-MySQL Server 5.1+
-PHP Version 5.3+
+* Apache 2.2+ or nginx
+* MySQL Server 5.1+
+* PHP Version 7.3+
 
 ## Installation
 First of all, extract the downloaded archive and copy the contained folders and files to your webserver directory.
@@ -53,7 +55,7 @@ Before you start with the installation process, ensure that the folders you've j
 
 File / Folder | Description
 --------------|------------
-`/customers/[yourapp]/docroot/images` | Stores upload images.
+`/croissant/docroot/images` | Stores upload images.
 
 The actual permission settings depend on the user that the webserver is running with and the owner of the folders. If your webserver has problems with the CHMOD 755, you can also try 775 and lastly 777 in this order.| 
 
@@ -67,11 +69,13 @@ Import the SQL file from `Croissant-Dataserver/trunk/croissant_schema.sql`
 
 ### 4. Setup config file
 Step 1 - Website config file
-Copy code from `Croissant-Web/customers/[yourapp]/configuration/sample.configuration.php` to `Croissant-Web/customers/[yourapp]/configuration/local.configuration.php`
 
-Edit `local.configuration.php` to match your configuration
+	Copy code from `Croissant-Web/customers/[yourapp]/configuration/sample.configuration.php` to `Croissant-Web/customers/[yourapp]/configuration/local.configuration.php`
+
+	Edit `local.configuration.php` to match your configuration
 
 Step 2 - Dataserver config file
-Copy code from `Croissant-Dataserver/sample.database.configuration.php` to `Croissant-Dataserver/database.configuration.php`
+
+	Copy code from `Croissant-Dataserver/sample.database.configuration.php` to `Croissant-Dataserver/database.configuration.php`
 
 Edit `database.configuration.php` to match your configuration
